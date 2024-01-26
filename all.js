@@ -30,8 +30,8 @@ list.addEventListener("click", function(e){
     return
   }
   let num =  e.target.getAttribute("data-num")
-    console.log(num)
   data.splice(num,1)
+  // 也可以用 delete data[num]
   render()
 
 })
